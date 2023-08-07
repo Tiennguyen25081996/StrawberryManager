@@ -19,6 +19,7 @@ struct MessagesView: View {
     var body: some View {
         NavigationView {
             List {
+                // first Commit Githubs
                 //Section {
                 ForEach(groupModel.groupMessageArray, id: \.id) { group in
                         GroupChatRowView()
