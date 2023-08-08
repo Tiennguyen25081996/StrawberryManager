@@ -31,7 +31,6 @@ struct ContentView_Previews: PreviewProvider {
 }
 
 extension ContentView {
-    
     var mainInterfaceView: some View{
         ZStack(alignment: .topLeading){
             MainTabView()
