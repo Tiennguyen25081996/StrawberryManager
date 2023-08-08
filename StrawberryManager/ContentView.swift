@@ -15,7 +15,7 @@ struct ContentView: View {
     @EnvironmentObject var tabSelection: TabSelection
     var body: some View {
         Group{
-            if $viewModel.userSession == nil {
+            if viewModel.userSession == nil {
                 LoginView()
             } else {
                 mainInterfaceView
