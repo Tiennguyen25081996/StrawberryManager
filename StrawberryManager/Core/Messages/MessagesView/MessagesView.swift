@@ -20,6 +20,7 @@ struct MessagesView: View {
         NavigationView {
             List {
                 // first Commit Githubs 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
+                // 20230808
                 //Section {
                 ForEach(groupModel.groupMessageArray, id: \.id) { group in
                         GroupChatRowView()
