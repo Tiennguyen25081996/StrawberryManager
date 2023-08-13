@@ -139,6 +139,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		091BA44A2A892FEB00E62F60 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		09508EDD2A5EFC5C00B16951 /* GroupChat */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +185,7 @@
 			children = (
 				09B603CA2A4C8CB40057AB9A /* StrawberryManager */,
 				09B603C92A4C8CB40057AB9A /* Products */,
+				091BA44A2A892FEB00E62F60 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};

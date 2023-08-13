@@ -15,7 +15,7 @@ struct UserService {
         Firestore.firestore().collection("users")
             .document(uid)
             .getDocument{ snapshot,_ in
-                guard let data = snapshot?.data() else {return}
+                guard (snapshot?.data()) != nil else {return}
                 
                 guard let user = try? snapshot?.data(as: User.self) else {return}
                 completion(user)
