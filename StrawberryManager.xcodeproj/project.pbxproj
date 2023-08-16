@@ -56,6 +56,9 @@
 		09B6042B2A4F52380057AB9A /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 09B6042A2A4F52380057AB9A /* FirebaseStorage */; };
 		09B6042D2A4F54AA0057AB9A /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B6042C2A4F54AA0057AB9A /* AuthViewModel.swift */; };
 		09B6042F2A4F64D60057AB9A /* ProfilePhotoSelecterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B6042E2A4F64D60057AB9A /* ProfilePhotoSelecterView.swift */; };
+		09C4E78E2A8B972700D4CEE1 /* ChartGoldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C4E78D2A8B972700D4CEE1 /* ChartGoldView.swift */; };
+		09C4E7902A8B983200D4CEE1 /* ChartGoldModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C4E78F2A8B983200D4CEE1 /* ChartGoldModel.swift */; };
+		09C4E7922A8B98B500D4CEE1 /* RowItemGold.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C4E7912A8B98B500D4CEE1 /* RowItemGold.swift */; };
 		09CA13EB2A55D8F200BE6C01 /* depositphotos_58731825-stock-illustration-strawberry-vector-icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09CA13EA2A55D8F200BE6C01 /* depositphotos_58731825-stock-illustration-strawberry-vector-icon.jpg */; };
 		09CA13EE2A59024000BE6C01 /* AppRowViewForProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CA13ED2A59024000BE6C01 /* AppRowViewForProfile.swift */; };
 		09CA13F62A5AF2C800BE6C01 /* MessagesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CA13F52A5AF2C800BE6C01 /* MessagesModel.swift */; };
@@ -112,6 +115,9 @@
 		09B604212A4F50F40057AB9A /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		09B6042C2A4F54AA0057AB9A /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		09B6042E2A4F64D60057AB9A /* ProfilePhotoSelecterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePhotoSelecterView.swift; sourceTree = "<group>"; };
+		09C4E78D2A8B972700D4CEE1 /* ChartGoldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartGoldView.swift; sourceTree = "<group>"; };
+		09C4E78F2A8B983200D4CEE1 /* ChartGoldModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartGoldModel.swift; sourceTree = "<group>"; };
+		09C4E7912A8B98B500D4CEE1 /* RowItemGold.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowItemGold.swift; sourceTree = "<group>"; };
 		09CA13EA2A55D8F200BE6C01 /* depositphotos_58731825-stock-illustration-strawberry-vector-icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "depositphotos_58731825-stock-illustration-strawberry-vector-icon.jpg"; path = "../../../../../Downloads/depositphotos_58731825-stock-illustration-strawberry-vector-icon.jpg"; sourceTree = "<group>"; };
 		09CA13EC2A56F82400BE6C01 /* green-plus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "green-plus.jpg"; path = "../../../../../Downloads/green-plus.jpg"; sourceTree = "<group>"; };
 		09CA13ED2A59024000BE6C01 /* AppRowViewForProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRowViewForProfile.swift; sourceTree = "<group>"; };
@@ -172,6 +178,13 @@
 			path = GroupChatModel;
 			sourceTree = "<group>";
 		};
+		0987A4642A8CA51100F1D311 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		099532592A5012D2008AAEF7 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +196,7 @@
 		09B603BF2A4C8CB30057AB9A = {
 			isa = PBXGroup;
 			children = (
+				0987A4642A8CA51100F1D311 /* Data */,
 				09B603CA2A4C8CB40057AB9A /* StrawberryManager */,
 				09B603C92A4C8CB40057AB9A /* Products */,
 				091BA44A2A892FEB00E62F60 /* Frameworks */,
@@ -256,6 +270,7 @@
 		09B603DC2A4C8D4A0057AB9A /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				09C4E78A2A8B96EE00D4CEE1 /* ChartGold */,
 				09B604122A4F24260057AB9A /* Authentication */,
 				09B6040B2A4E9A500057AB9A /* UploadApp */,
 				09B603FE2A4DD6670057AB9A /* SideMenu */,
@@ -492,6 +507,32 @@
 			path = Authentication;
 			sourceTree = "<group>";
 		};
+		09C4E78A2A8B96EE00D4CEE1 /* ChartGold */ = {
+			isa = PBXGroup;
+			children = (
+				09C4E78C2A8B970800D4CEE1 /* ViewModels */,
+				09C4E78B2A8B96FF00D4CEE1 /* View */,
+			);
+			path = ChartGold;
+			sourceTree = "<group>";
+		};
+		09C4E78B2A8B96FF00D4CEE1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				09C4E78D2A8B972700D4CEE1 /* ChartGoldView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		09C4E78C2A8B970800D4CEE1 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				09C4E7912A8B98B500D4CEE1 /* RowItemGold.swift */,
+				09C4E78F2A8B983200D4CEE1 /* ChartGoldModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		09CA13F12A59B08000BE6C01 /* MessagesView */ = {
 			isa = PBXGroup;
 			children = (
@@ -608,8 +649,10 @@
 				09B603F02A4C9C480057AB9A /* NotificationView.swift in Sources */,
 				09B6041D2A4F46C70057AB9A /* CutomInputFieldd.swift in Sources */,
 				093F23922A52DD89007C48B1 /* AppRowsViewModel.swift in Sources */,
+				09C4E7922A8B98B500D4CEE1 /* RowItemGold.swift in Sources */,
 				09CA13EE2A59024000BE6C01 /* AppRowViewForProfile.swift in Sources */,
 				09B604112A4E9E1F0057AB9A /* TextArea.swift in Sources */,
+				09C4E7902A8B983200D4CEE1 /* ChartGoldModel.swift in Sources */,
 				09B603F82A4DCC830057AB9A /* AppFillterViewModel.swift in Sources */,
 				09508EE52A5EFE4600B16951 /* GroupChatRowView.swift in Sources */,
 				09508EE32A5EFCAD00B16951 /* GroupChatView.swift in Sources */,
@@ -628,6 +671,7 @@
 				09B604062A4E6AAB0057AB9A /* SideMenuViewModel.swift in Sources */,
 				09B6041B2A4F2B690057AB9A /* RoundedShape.swift in Sources */,
 				093F238A2A51D3F6007C48B1 /* UploadAppStatusViewModel.swift in Sources */,
+				09C4E78E2A8B972700D4CEE1 /* ChartGoldView.swift in Sources */,
 				099532622A508FE7008AAEF7 /* Users.swift in Sources */,
 				09B604082A4E6D490057AB9A /* UserStatusView.swift in Sources */,
 				09B603FD2A4DD26D0057AB9A /* UserRowView.swift in Sources */,

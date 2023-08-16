@@ -1,5 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict/>
+<dict>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLIconFile</key>
+			<string>depositphotos_58731825-stock-illustration-strawberry-vector-icon</string>
+			<key>CFBundleURLName</key>
+			<string>fff</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>f</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLIconFile</key>
+			<string>depositphotos_58731825-stock-illustration-strawberry-vector-icon</string>
+			<key>CFBundleURLName</key>
+			<string>ffff</string>
+			<key>ITSWatchOnlyContainer</key>
+			<false/>
+		</dict>
+	</array>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>NSExceptionAllowsInsecureHTTPLoads</key>
+			<true/>
+			<key>NSIncludesSubdomains</key>
+			<true/>
+			<key>api.btmc.vns</key>
+			<dict/>
+		</dict>
+	</dict>
+</dict>
 </plist>

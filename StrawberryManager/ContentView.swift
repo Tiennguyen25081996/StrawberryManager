@@ -18,7 +18,6 @@ struct ContentView: View {
             if $viewModel.userSession == nil {
                 LoginView()
             } else {
-                //LoginView()
                 mainInterfaceView
             }
         }

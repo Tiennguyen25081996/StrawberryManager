@@ -48,7 +48,13 @@ struct SideMenuView: View {
                         }label: {
                             SideOptionRowView(sideMenuViewModel: viewModel_item)
                         }
-                    } else {
+                    } else if viewModel_item == .goldChar {
+                        NavigationLink{
+                            ChartGoldView()
+                        } label: {
+                            SideOptionRowView(sideMenuViewModel: viewModel_item)
+                        }
+                    }else {
                         SideOptionRowView(sideMenuViewModel: viewModel_item)
                     }
                     
